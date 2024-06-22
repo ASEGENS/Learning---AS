@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JLearning - Home</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/JLearningAS/css.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            $("#navbar").load("/JLearningAS/navbar.html");
+        });
+    </script>
+</head>
+<body>
+
+    <!-- Import navbar -->
+    <div class="container-fluid p-0">
+        <div id="navbar"></div>
+    </div>
+
+    <div class="container my-5">
+        <h1>Vocabulary</h1>
+        <div class="accordion" id="vocabularyAccordion">
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="chapter1">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseChapter1" aria-expanded="false" aria-controls="collapseChapter1">
+                        Chapter 1
+                    </button>
+                </h2>
+                <div id="collapseChapter1" class="accordion-collapse collapse" aria-labelledby="chapter1" data-bs-parent="#vocabularyAccordion">
+                    <div class="accordion-body">
+                        <h3>Greetings (あいさつ)</h3>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Japanese</th>
+                                    <th scope="col">Romaji</th>
+                                    <th scope="col">English</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>初めまして</td>
+                                    <td>Hajimemashite</td>
+                                    <td>Nice to meet you</td>
+                                </tr>
+                                <tr>
+                                    <td>こんにちは</td>
+                                    <td>Konnichiwa</td>
+                                    <td>Hello (used during the day)</td>
+                                </tr>
+                                <tr>
+                                    <td>おはようございます</td>
+                                    <td>Ohayou gozaimasu</td>
+                                    <td>Good morning</td>
+                                </tr>
+                                <tr>
+                                    <td>こんばんは</td>
+                                    <td>Konbanwa</td>
+                                    <td>Good evening</td>
+                                </tr>
+                                <tr>
+                                    <td>さようなら</td>
+                                    <td>Sayounara</td>
+                                    <td>Goodbye</td>
+                                </tr>
+                                <tr>
+                                    <td>ありがとう</td>
+                                    <td>Arigatou</td>
+                                    <td>Thank you</td>
+                                </tr>
+                                <tr>
+                                    <td>すみません</td>
+                                    <td>Sumimasen</td>
+                                    <td>Excuse me/I'm sorry</td>
+                                </tr>
+                                <tr>
+                                    <td>いいえ</td>
+                                    <td>Iie</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>はい</td>
+                                    <td>Hai</td>
+                                    <td>Yes</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="chapter2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseChapter2" aria-expanded="false" aria-controls="collapseChapter2">
+                        Chapter 2
+                    </button>
+                </h2>
+                <div id="collapseChapter2" class="accordion-collapse collapse" aria-labelledby="chapter2" data-bs-parent="#vocabularyAccordion">
+                    <div class="accordion-body">
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card-container">
+                                    <div class="card justify-content-center align-items-center text-center">
+                                        <div class="front">
+                                            <h2>こんにちは</h2>
+                                        </div>
+                                        <div class="back">
+                                            <p>こんにちは</p>
+                                            <p>Konnichiwa</p>
+                                            <p>Hello (used during the day)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card-container">
+                                    <div class="card justify-content-center align-items-center text-center">
+                                        <div class="front">
+                                            <h2>こんにちは</h2>
+                                        </div>
+                                        <div class="back">
+                                            <p>こんにちは</p>
+                                            <p>Konnichiwa</p>
+                                            <p>Hello (used during the day)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Repeat for each word -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="Transportation">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseChapter3" aria-expanded="false" aria-controls="collapseTransportation">
+                        Means of Transportation
+                    </button>
+                </h2>
+                <div id="collapseChapter3" class="accordion-collapse collapse" aria-labelledby="Transportation" data-bs-parent="#vocabularyAccordion">
+                    <div class="accordion-body">
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card-container">
+                                    <div class="card justify-content-center align-items-center text-center">
+                                        <div class="front">
+                                            <h2>自転車</h2>
+                                        </div>
+                                        <div class="back">
+                                            <p>じてんしゃ</p>
+                                            <p>Jitensha</p>
+                                            <p>Bicycle</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card-container">
+                                    <div class="card justify-content-center align-items-center text-center">
+                                        <div class="front">
+                                            <h2>車</h2>
+                                        </div>
+                                        <div class="back">
+                                            <p>くるま</p>
+                                            <p>Kuruma</p>
+                                            <p>Car</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card-container ">
+                                    <div class="card justify-content-center align-items-center text-center">
+                                        <div class="front">
+                                            <h2>電車</h2>
+                                        </div>
+                                        <div class="back">
+                                            <p>でんしゃ</p>
+                                            <p>Densha</p>
+                                            <p>Train</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            </div>
+                            <br />
+                            <div class="row">
+
+
+                                <div class="col-md-4">
+                                    <div class="card-container">
+                                        <div class="card justify-content-center align-items-center text-center">
+                                            <div class="front">
+                                                <h2>電車</h2>
+                                            </div>
+                                            <div class="back">
+                                                <p>でんしゃ</p>
+                                                <p>Densha</p>
+                                                <p>Train</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="card-container">
+                                        <div class="card justify-content-center align-items-center text-center">
+                                            <div class="front">
+                                                <h2>バス</h2>
+                                            </div>
+                                            <div class="back">
+                                                <p>ばす</p>
+                                                <p>Basu</p>
+                                                <p>Bus</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="card-container">
+                                        <div class="card justify-content-center align-items-center text-center">
+                                            <div class="front">
+                                                <h2>飛行機</h2>
+                                            </div>
+                                            <div class="back">
+                                                <p>ひこうき</p>
+                                                <p>Hikouki</p>
+                                                <p>Airplane</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div />
+                                <br />
+                                <div class="row">
+
+                                    <div class="col-md-4">
+                                        <div class="card-container">
+                                            <div class="card justify-content-center align-items-center text-center">
+                                                <div class="front">
+                                                    <h2>船</h2>
+                                                </div>
+                                                <div class="back">
+                                                    <p>ふね</p>
+                                                    <p>Fune</p>
+                                                    <p>Ship/Boat</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="card-container">
+                                            <div class="card justify-content-center align-items-center text-center">
+                                                <div class="front">
+                                                    <h2>タクシー</h2>
+                                                </div>
+                                                <div class="back">
+                                                    <p>たくしー</p>
+                                                    <p>Takushii</p>
+                                                    <p>Taxi</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="card-container">
+                                            <div class="card justify-content-center align-items-center text-center">
+                                                <div class="front">
+                                                    <h2>飛行機</h2>
+                                                </div>
+                                                <div class="back">
+                                                    <p>ひこうき</p>
+                                                    <p>Hikouki</p>
+                                                    <p>Airplane</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Repeat for each word -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

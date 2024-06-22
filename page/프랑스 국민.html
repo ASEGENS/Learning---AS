@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JLearning - Accueil</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/JLearningAS/css.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            $("#navbar").load("/JLearningAS/navbar.html");
+        });
+    </script>
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <div id="navbar"></div>
+    </div>
+
+    <div class="container my-5">
+        <h1>
+            프랑스어
+        </h1>
+        <a href="https://www.scribens.fr/">프랑스어 교정</a>
+        <p>
+            프랑스어로 쓰고 확인을 누르십시오
+        </p>
+        <div class="accordion" id="vocabularyAccordion">
+
+
+            <div class="container my-5">
+                <h1>1장</h1>
+                <!-- Kit de secours / 구급 상자 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="chapter1">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseChapter1" aria-expanded="false" aria-controls="collapseChapter1">
+                            Kit de secours / 구급 상자
+                        </button>
+                    </h2>
+                    <div id="collapseChapter1" class="accordion-collapse collapse" aria-labelledby="chapter1">
+                        <div class="accordion-body">
+                            <h3>
+                                Salutations ( 인사말 )
+                            </h3>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Français</th>
+                                        <th scope="col">Prononciation (Romanisé)</th>
+                                        <th scope="col">발음 (Français en Hangul)</th>
+                                        <th scope="col">한국어 (Coréen)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>bonjour</td>
+                                        <td>annyeonghaseyo</td>
+                                        <td>봉주르</td>
+                                        <td>안녕하세요</td>
+                                    </tr>
+                                    <tr>
+                                        <td>bonsoir</td>
+                                        <td>annyonghi jumuseyo</td>
+                                        <td>봉스와르</td>
+                                        <td>안녕히 주무세요</td>
+                                    </tr>
+                                    <tr>
+                                        <td>au revoir</td>
+                                        <td>annyeonghi kaseyo</td>
+                                        <td>오 르부아</td>
+                                        <td>안녕히 가세요</td>
+                                    </tr>
+                                    <tr>
+                                        <td>enchanté(e)</td>
+                                        <td>bangawoyo</td>
+                                        <td>앙샹테</td>
+                                        <td>반가워요</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Je suis + prénom (+ nom de famille)</td>
+                                        <td>Jeoneun [ileum] imnida</td>
+                                        <td>쥬스위 [prénom]</td>
+                                        <td>저는 [이름] 입니다</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Je m’appelle + prénom (+ nom de famille)</td>
+                                        <td>je ileum-eun [ileum]ibnida</td>
+                                        <td>쥬 마펠 [prénom]</td>
+                                        <td>제 이름은 [이름]입니다</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pardon</td>
+                                        <td>미안해</td>
+                                        <td>파르돈</td>
+                                        <td>미안해</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Désolé </td>
+                                        <td>joesonghamnida</td>
+                                        <td>데졸레</td>
+                                        <td>죄송합니다 </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Je suis vraiment désolé </td>
+                                        <td>jeongmallo joesonghamnida</td>
+                                        <td>쥬스위 브라이먼 데졸레</td>
+                                        <td>정말로 죄송합니다 </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bonne chance</td>
+                                        <td>haengun-eul bimnida</td>
+                                        <td>보너 샹스</td>
+                                        <td>행운을 빕니다</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Santé</td>
+                                        <td>geonbae</td>
+                                        <td>산테</td>
+                                        <td>건배</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Incroyable</td>
+                                        <td>daebak</td>
+                                        <td>앵크레아블</td>
+                                        <td>대박</td>
+                                    </tr>
+                                    <tr>
+                                        <td>As-tu mangé?</td>
+                                        <td>bab meogeosseoyo?</td>
+                                        <td>아투 맹게?</td>
+                                        <td>밥 먹었어요?</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bon appétit</td>
+                                        <td>jal meokgetseumnida</td>
+                                        <td>본 아페티</td>
+                                        <td>잘 먹겠습니다</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Merci pour ce repas</td>
+                                        <td>jal meogeotseuminda</td>
+                                        <td>메르시 푸르 세 르빠</td>
+                                        <td>잘 먹었습니다</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Félicitations</td>
+                                        <td>chukahaeyo</td>
+                                        <td>페리시타숑</td>
+                                        <td>축하해요</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pas de problème</td>
+                                        <td>munje eopseoyo</td>
+                                        <td>파드 르블렘</td>
+                                        <td>문제 없어요</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bien sûr</td>
+                                        <td>dangyeonhajyo</td>
+                                        <td>비엉 슈르</td>
+                                        <td>당연하죠</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Juste un moment, s'il vous plaît</td>
+                                        <td>jamsiman gidaryeo juseyo</td>
+                                        <td>쥬스떠 앙 모몽, 시부플레</td>
+                                        <td>잠시만 기다려 주세요</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dormez bien</td>
+                                        <td>jal jayo</td>
+                                        <td>도르메 비엉</td>
+                                        <td>잘 자요</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Revenez en sécurité</td>
+                                        <td>anjeonhage jib-e gada</td>
+                                        <td>레부네 엔 세쿠리떼</td>
+                                        <td>안전하게 집에 가다</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ne t'inquiète pas</td>
+                                        <td>geokjeong hajimaseyo</td>
+                                        <td>네 띠끄리떼 파</td>
+                                        <td>걱정 하지마</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Parlez-vous anglais ?</td>
+                                        <td>yeongeo haseyo</td>
+                                        <td>파를리부 앙글레?</td>
+                                        <td>영어하세요?</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Parlez-vous coréen ?</td>
+                                        <td>hangugeo haseyo</td>
+                                        <td>파를리부 코레앙?</td>
+                                        <td>한국어하세요?</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Je comprends</td>
+                                        <td>ihae haeyo</td>
+                                        <td>쥬 콤프롱</td>
+                                        <td>이해해요</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Je ne comprends pas</td>
+                                        <td>ihae mos haeyo</td>
+                                        <td>쥬 네 콤프롱 파</td>
+                                        <td>이해 못 해요</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Qu'as-tu dit ?</td>
+                                        <td>mworago haesseo?</td>
+                                        <td>크아츄 디?</td>
+                                        <td>뭐라고 했어?</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pouvez-vous parler lentement, s'il vous plaît ?</td>
+                                        <td>cheoncheonhi mal hae juseyo</td>
+                                        <td>푸베쥬 파를리 랑떼맹, 시부플레?</td>
+                                        <td>천천히 말 해주세요</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Veuillez répéter</td>
+                                        <td>banbog haseyo</td>
+                                        <td>부예 리페떼</td>
+                                        <td>반복하세요</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Veuillez l'écrire</td>
+                                        <td>jeogeo juseyo</td>
+                                        <td>부예리 레크리르</td>
+                                        <td>적어주세요</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Je parle un peu de coréen</td>
+                                        <td>hangugeo-leul jogeumhanda</td>
+                                        <td>쥬 파를 앙 퓨 드 코레앙</td>
+                                        <td>한국어를 조금한다</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Que signifie ceci ?</td>
+                                        <td>igeoseun mueos-eul uimi haneunga?</td>
+                                        <td>크 샹니피 세시 ?</td>
+                                        <td>이것은 무엇을 의미 하는가?</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Comment dit-on _ en coréen ?</td>
+                                        <td>_ hangugmallo mwoyeyo?</td>
+                                        <td>코멍 디똥 _ 앙 코레앙 ?</td>
+                                        <td>_ 한국말로 뭐예요?</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Combien ça coûte ?</td>
+                                        <td>eolmayeyo?</td>
+                                        <td>콤비엉 사 콰뜨 ?</td>
+                                        <td>얼마에요?</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Où se trouve _ ?</td>
+                                        <td>_ eodie isseyo?</td>
+                                        <td>우 스 뜨뤼브 _ ?</td>
+                                        <td>_ 어디에 있어요?</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Où se trouve les toilettes ?</td>
+                                        <td>hwajangsireun eodie isseyo?</td>
+                                        <td>우 스 뜨뤼브 레 뜨왈레뜨 ?</td>
+                                        <td>화장실은 어디에 있어요?</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Là-bas</td>
+                                        <td>jeogi</td>
+                                        <td>라-바</td>
+                                        <td>저기</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tout droit</td>
+                                        <td>jigjin</td>
+                                        <td>뚜뜨 드뤼</td>
+                                        <td>직진</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Droite</td>
+                                        <td>oleunjjok</td>
+                                        <td>드뤼뜨</td>
+                                        <td>오른쪽</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gauche</td>
+                                        <td>oenjjok</td>
+                                        <td>고취</td>
+                                        <td>왼쪽</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pouvez-vous m'aider, s'il vous plaît ?</td>
+                                        <td>dowa julsu isseuseyo?</td>
+                                        <td>푸베쥬 모세데, 시부플레?</td>
+                                        <td>도와 줄수있으세요?</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- auxiliaire "être" et "avoir" -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="auxiliaire">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAuxiliaire" aria-expanded="false" aria-controls="collapseAuxiliaire">
+                            Auxiliaire "être" et "avoir"
+                        </button>
+                    </h2>
+                    <div id="collapseAuxiliaire" class="accordion-collapse collapse" aria-labelledby="Auxiliaire">
+                        <div class="accordion-body">
+                            <h3>Auxiliaire "être" et "avoir"</h3>
+                            <p>
+                                "être"와 "avoir"은 프랑스어에서 중요한 보조 동사들입니다. "être"은 상태와 신원을, "avoir"은 소유를 나타냅니다. 이들은 문장 구성과 동사 활용에 필수적입니다.
+                            </p>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">
+                                            Être ("이다") .
+                                        </th>
+                                        <th scope="col">
+                                            Avoir ("가지다") .
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            "이다"는 상태, 신원, 직업, 국적, 출신 등을 표현하는 데 사용되는 동사입니다.
+                                            프랑스어에서 "être"은 주어와 동사의 시제에 따라 변화합니다. 몇 가지 예를 보여드리겠습니다.
+                                            <br><br>
+
+                                            Je suis étudiant(e). (나는 학생입니다.)
+                                            <br>
+                                            Tu es coréen(ne). (너는 한국인이야.)
+                                            <br>
+                                            Il/elle est médecin. (그는 의사입니다.)
+                                            <br>
+                                            Nous sommes amis. (우리는 친구입니다.)
+                                            <br>
+                                            Vous êtes en retard. (당신은 늦었습니다.)
+                                            <br>
+                                            Ils/elles sont heureux(ses). (그들은 행복합니다.)
+                                        </td>
+                                        <td>
+                                            "가지다"는 소유를 나타내는 데 사용되는 동사입니다.
+                                            프랑스어에서 "avoir"은 주어와 동사의 시제에 따라 변화합니다. 몇 가지 예를 보여드리겠습니다.
+                                            <br><br>
+
+                                            J'ai un chien. (나는 개를 가지고 있어요.)
+                                            <br>
+                                            Tu as de l'expérience. (너는 경험이 있어요.)
+                                            <br>
+                                            Il/elle a deux frères. (그는 두 형제가 있어요.)
+                                            <br>
+                                            Nous avons faim. (우리는 배고파요.)
+                                            <br>
+                                            Vous avez de la chance. (당신은 운이 좋아요.)
+                                            <br>
+                                            Ils/elles ont peur. (그들은 무서워해요.)
+                                        </td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+
+
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Temps</th>
+                                        <th scope="col">Etre</th>
+                                        <th scope="col">Avoir</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Présent (현재 시제).</td>
+                                        <td>
+                                            Je suis (나는 있어요)
+                                            <br>
+                                            Tu es (너는 있어요)
+                                            <br>
+                                            Il/elle est (그는 있어요)
+                                            <br>
+                                            Nous sommes (우리는 있어요)
+                                            <br>
+                                            Vous êtes (당신은 있어요)
+                                            <br>
+                                            Ils/elles sont (그들은 있어요)
+                                        </td>
+                                        <td>
+                                            J'ai (나는 가지고 있어요)
+                                            <br>
+                                            Tu as (너는 가지고 있어요)
+                                            <br>
+                                            Il/elle a (그는 가지고 있어요)
+                                            <br>
+                                            Nous avons (우리는 가지고 있어요)
+                                            <br>
+                                            Vous avez (당신은 가지고 있어요)
+                                            <br>
+                                            Ils/elles ont (그들은 가지고 있어요)
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Passé composé (과거 완료 시제).</td>
+                                        <td>
+                                            J'ai été (나는 이었어요)
+                                            <br>
+                                            Tu as été (너는 이었어요)
+                                            <br>
+                                            Il/elle a été (그는 이었어요)
+                                            <br>
+                                            Nous avons été (우리는 이었어요)
+                                            <br>
+                                            Vous avez été (당신은 이었어요)
+                                            <br>
+                                            Ils/elles ont été (그들은 이었어요)
+                                        </td>
+                                        <td>
+                                            J'ai eu (나는 가졌어요)
+                                            <br>
+                                            Tu as eu (너는 가졌어요)
+                                            <br>
+                                            Il/elle a eu (그는 가졌어요)
+                                            <br>
+                                            Nous avons eu (우리는 가졌어요)
+                                            <br>
+                                            Vous avez eu (당신은 가졌어요)
+                                            <br>
+                                            Ils/elles ont eu (그들은 가졌어요)
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Futur simple (미래 시제).</td>
+                                        <td>
+                                            Je serai (나는 될 거예요)
+                                            <br>
+                                            Tu seras (너는 될 거예요)
+                                            <br>
+                                            Il/elle sera (그는 될 거예요)
+                                            <br>
+                                            Nous serons (우리는 될 거예요)
+                                            <br>
+                                            Vous serez (당신은 될 거예요)
+                                            <br>
+                                            Ils/elles seront (그들은 될 거예요)
+                                        </td>
+                                        <td>
+                                            Je aurai (나는 가질 거예요)
+                                            <br>
+                                            Tu auras (너는 가질 거예요)
+                                            <br>
+                                            Il/elle aura (그는 가질 거예요)
+                                            <br>
+                                            Nous aurons (우리는 가질 거예요)
+                                            <br>
+                                            Vous aurez (당신은 가질 거예요)
+                                            <br>
+                                            Ils/elles auront (그들은 가질 거예요)
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Introduction au français / 프랑스어 소개 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="IntroductionFrancais">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseIntroductionFrancais" aria-expanded="false" aria-controls="collapseIntroductionFrancais">
+                            Introduction au français / 프랑스어 소개
+                        </button>
+                    </h2>
+                    <div id="collapseIntroductionFrancais" class="accordion-collapse collapse" aria-labelledby="IntroductionFrancais">
+                        <div class="accordion-body">
+                            <h3>프랑스어 소개</h3>
+                            <p>
+                                프랑스어는 로마 인이 사용하는 언어로 전 세계에 약 2억 2천만의 사용자가 있습니다. 프랑스어를 배우려면 그 알파벳, 발음, 억양, 단어의 성별, 그리고 조사를 이해하는 것부터 시작해야 합니다.
+                            </p>
+
+                            <h4>알파벳과 발음</h4>
+                            <p>
+                                프랑스어의 알파벳은 26글자로 구성되어 있으며, 그 중 6개는 모음(a, e, i, o, u, y)이고, 20개는 자음입니다. 각 글자마다 고유한 발음이 있으며, 일부 글자는 결합하여 고유한 소리를 만드는 경우도 있습니다.
+                            </p>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col"></th>
+                                        <th scope="col"></th>
+                                        <th scope="col"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>A</td><td>아</td> <td>B</td><td>베</td></tr>
+                                    <tr><td>C</td><td>세</td> <td>D</td><td>데</td></tr>
+                                    <tr><td>E</td><td>에</td> <td>F</td><td>에프</td></tr>
+                                    <tr><td>G</td><td>쥐</td>  <td>H</td><td>아쉬</td></tr>
+                                    <tr><td>I</td><td>이</td>     <td>J</td><td>지</td></tr>
+                                    <tr><td>K</td><td>카</td>     <td>L</td><td>엘</td></tr>
+                                    <tr><td>M</td><td>엠</td>       <td>N</td><td>앵</td></tr>
+                                    <tr><td>O</td><td>오</td>        <td>P</td><td>페</td></tr>
+                                    <tr><td>Q</td><td>큐</td>          <td>R</td><td>에르</td></tr>
+                                    <tr><td>S</td><td>에스</td>       <td>T</td><td>테</td></tr>
+                                    <tr><td>U</td><td>위</td>        <td>V</td><td>브</td></tr>
+                                    <tr><td>W</td><td>두블-베</td>         <td>X</td><td>익스</td></tr>
+                                    <tr><td>Y</td><td>이그렉</td>           <td>Z</td><td>제드</td></tr>
+                                </tbody>
+                            </table>
+
+                            <h4>프랑스어의 억양</h4>
+                            <p>
+                                프랑스어에서는 일부 문자에 억양 표시가 있어 단어의 발음이나 뜻이 바뀔 수 있습니다. 네 가지 억양 표시가 있으며, 그것은 각각 악상(aigu, é), 그라브(grave, è), 써컴플렉스(circonflexe, ê), 그리고 디에레시스(diaeresis, ë)입니다.
+                            </p>
+
+                            <h4>단어의 성별</h4>
+                            <p>
+                                프랑스어에서 모든 명사는 성별이 있으며, 남성 또는 여성 중 하나입니다. 명사의 성별은 그것과 함께 사용되는 조사의 형태와, 그것을 수식하는 형용사의 형태에 영향을 미칩니다.
+                            </p>
+
+                            <h4>조사</h4>
+                            <p>
+                                조사는 명사 앞에 오는 단어로, 명사가 특정한 것인지 일반적인 것인지를 나타냅니다. 프랑스어에는 세 가지 조사가 있습니다 : 정관사(le, la, l', les), 부정관사(un, une, des), 그리고 부분관사(du, de la, de l', des).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="/JLearningAS/js.js"></script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+﻿html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #f8f7f3;
+    font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 80px;
+}
+
+footer {
+    margin-top: 10%;
+    flex-shrink: 0;
+    background-color: #ff0000;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.logo {
+    max-height: 90px; 
+    width: auto; 
+    border-radius: 20%; 
+}
+
+
+
+.NFcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+    padding: 5px;
+}
+
+h1, h2, h3 {
+    font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,.1);
+    padding: 30px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #cc0000;
+    border: none;
+    border-radius: 25px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+    .btn:hover {
+        background-color: #a80000;
+        cursor: pointer;
+    }
+
+.container img {
+    border: 2px solid #cc0000;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+    display: block;
+}
+
+.container h1 {
+    padding-bottom: 10px;
+    color: #cc0000;
+}
+
+.container p {
+    border-left: 2px solid #cc0000;
+    padding-left: 20px;
+}
+
+.accordion-button {
+    background-color: #ffffff;
+    color: #cc0000;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,.1);
+}
+
+    .accordion-button:hover {
+        background-color: #cc0000;
+        color: #ffffff;
+    }
+
+    .accordion-button:not(.collapsed) {
+        background-color: #cc0000;
+        color: #ffffff;
+    }
+
+.navbar {
+    justify-content: center;
+    background-color: #ff0000;
+    box-shadow: 0 2px 5px rgba(0,0,0,.5);
+    font-family: "Kozuka Gothic Pro", sans-serif;
+    padding: 5px 0;
+    height: 100px;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar-nav .nav-link {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0 20px;
+}
+
+    .navbar-nav .nav-link:hover {
+        background-color: #fff;
+        color: #ff0000;
+    }
+
+.dropdown-menu {
+    background-color: #fff;
+}
+
+.dropdown-item {
+    color: #000;
+}
+
+    .dropdown-item:hover {
+        background-color: #ff0000;
+        color: #fff;
+    }
+
+/*Card*/
+
+.card-container {
+    perspective: 1000px;
+    position: relative;
+    transform-style: preserve-3d; /* Ajoutez cette ligne */
+}
+
+.card {
+    width: 300px;
+    height: 200px; 
+
+    position: relative;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+
+
+
+.front, .back {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+}
+
+.front {
+    background-color: #f2f2f2;
+    z-index: 2;
+}
+
+.back {
+    background-color: #fff;
+    transform: rotateY(180deg);
+}
+
+.card-container:hover .card {
+    transform: rotateY(180deg);
+}
+
+
+/*Card*/

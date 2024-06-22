@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JLearning - Accueil</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/JLearningAS/css.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            $("#navbar").load("/JLearningAS/navbar.html");
+        });
+    </script>
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <div id="navbar"></div>
+    </div>
+
+    <div class="container my-5">
+        <h1>フランス語</h1>
+        <a href="https://www.scribens.fr/">
+            フランス語校正者
+        </a>
+        <p>
+            フランス語で書いて「認証済み」を押してください
+        </p>
+
+
+        <div class="accordion" id="vocabularyAccordion">
+            <div class="container my-5">
+                <h1>第1章</h1>
+
+                <!-- Comment lire / 読むかた -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="Lire">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLire" aria-expanded="false" aria-controls="collapseLire">
+                            Comment lire / 読むかた
+                        </button>
+                    </h2>
+                    <div id="collapseLire" class="accordion-collapse collapse" aria-labelledby="Lire" data-bs-parent="#vocabularyAccordion">
+                        <div class="accordion-body">
+                            <h3>
+                                Comment lire / 読むかた
+                            </h3>
+                            <p>
+                                音節は以下のような部分から構成されます：<br /><br />
+                            </p>
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td>Voyelle Noyau (母音核)</td>
+                                        <td>中心的かつ本質的、通常は一つの母音で構成されます。</td>
+                                        <td>例：「chat」の音節では、「a」が母音核です。</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Consonne(s) d'Attaque (子音開始音)</td>
+                                        <td>母音核の前にくる子音または子音の組み合わせ。</td>
+                                        <td>例：「chat」の音節では、「ch」が開始音です。</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Consonne(s) de Coda (子音終了音)</td>
+                                        <td>母音の核の後に来る子音または子音の組み合わせ。</td>
+                                        <td>例：「chat」の音節では、「t」が終了音です。</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Rime (韻)</td>
+                                        <td>母音核と終音の組み合わせ。</td>
+                                        <td>例：「chat」では、「at」が韻を形成します。</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>
+                                <br />
+                                音節の構造は次のように示されます：<br /><br />
+
+                                [子音開始音] + [母音核] + [子音終了音]<br /><br />
+
+                                例えば、「chat」という単語では：<br />
+
+                                子音開始音 = "ch"<br />
+                                母音核 = "a"<br />
+                                子音終了音 = "t"<br /><br />
+
+                                いくつかの音節は核のみで構成されることがあります（「eau」のように）、また、開始音と核を持ち、終了音がないこともあります（「ma」のように）。
+                            </p>
+                            <br /><br />
+
+                            <h3>
+                                フランス語のアルファベットとカタカナ表音
+                            </h3>
+                            <table class="table">
+                                <tr>
+                                    <td>a</td>
+                                    <td>ア</td>
+                                    <td>b</td>
+                                    <td>ブ</td>
+                                    <td>c</td>
+                                    <td>ク / シ</td>
+                                    <td>d</td>
+                                    <td>ド</td>
+                                </tr>
+                                <tr>
+                                    <td>e</td>
+                                    <td>エ / オー</td>
+                                    <td>f</td>
+                                    <td>フ</td>
+                                    <td>g</td>
+                                    <td>ジ / ギ</td>
+                                    <td>h</td>
+                                    <td>アッシュ (無音)</td>
+                                </tr>
+                                <tr>
+                                    <td>i</td>
+                                    <td>イ</td>
+                                    <td>j</td>
+                                    <td>ジュ</td>
+                                    <td>k</td>
+                                    <td>カ</td>
+                                    <td>l</td>
+                                    <td>ル</td>
+                                </tr>
+                                <tr>
+                                    <td>m</td>
+                                    <td>ム</td>
+                                    <td>n</td>
+                                    <td>ン</td>
+                                    <td>o</td>
+                                    <td>オ</td>
+                                    <td>p</td>
+                                    <td>プ</td>
+                                </tr>
+                                <tr>
+                                    <td>q</td>
+                                    <td>キュ</td>
+                                    <td>r</td>
+                                    <td>ル (ごく軽いr音)</td>
+                                    <td>s</td>
+                                    <td>ス</td>
+                                    <td>t</td>
+                                    <td>ト</td>
+                                </tr>
+                                <tr>
+                                    <td>u</td>
+                                    <td>ウ / ユー</td>
+                                    <td>v</td>
+                                    <td>ヴ</td>
+                                    <td>w</td>
+                                    <td>ドゥブルヴェ</td>
+                                    <td>x</td>
+                                    <td>イクス</td>
+                                </tr>
+                                <tr>
+                                    <td>y</td>
+                                    <td>イグレック</td>
+                                    <td>z</td>
+                                    <td>ズ</td>
+                                </tr>
+                            </table>
+                            <p>
+                                注意: フランス語の発音は多くの場合、文脈によって変わります。この表は基本的なガイドとして使用してください。
+                            </p>
+                            <br /><br />
+
+                            <h3>
+                                フランス語の一般的な音節とカタカナ表音
+                            </h3>
+                            <table class="table">
+                                <tr>
+                                    <td>ma</td>
+                                    <td>マ</td>
+                                    <td>le</td>
+                                    <td>ル</td>
+                                    <td>de</td>
+                                    <td>ドゥ</td>
+                                </tr>
+                                <tr><td>en</td><td>アン</td><td>re</td><td>ル</td><td>se</td><td>セ</td></tr>
+                                <tr><td>te</td><td>トゥ</td><td>me</td><td>ム</td></tr>
+                                <tr><td>ne</td><td>ヌ</td><td>que</td><td>クゥ</td></tr>
+                            </table>
+
+                            <p>
+                                この表も基本的なガイドとして使用し、特定の単語の発音に適したカタカナを選んでください。また、フランス語の音節とカタカナ表音を作成する際に、リスニング練習も行うと有用です。
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kit de secours / 応急処置キット -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="Kit">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseKit" aria-expanded="false" aria-controls="collapseKit">
+                            Kit de secours / 応急処置キット
+                        </button>
+                    </h2>
+                    <div id="collapseKit" class="accordion-collapse collapse" aria-labelledby="Kit" data-bs-parent="#vocabularyAccordion">
+                        <div class="accordion-body">
+                            <h3>
+                                Kit de secours / 応急処置キット
+                            </h3>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Français</th>
+                                        <th scope="col">Japonais (Romanisé)</th>
+                                        <th scope="col">フランス語からカタカナへ</th>
+                                        <th scope="col">日本語</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>bonjour</td>
+                                        <td>kon'nichiwa</td>
+                                        <td>ボンジュール</td>
+                                        <td>こんにちは</td>
+                                    </tr>
+                                    <tr>
+                                        <td>bonsoir</td>
+                                        <td>konbanwa</td>
+                                        <td>ボンスワール</td>
+                                        <td>こんばんは</td>
+                                    </tr>
+                                    <tr>
+                                        <td>au revoir</td>
+                                        <td>sayōnara</td>
+                                        <td>オ ルヴォワール</td>
+                                        <td>さようなら</td>
+                                    </tr>
+                                    <tr>
+                                        <td>enchanté(e)</td>
+                                        <td>hajimemashite</td>
+                                        <td>アンシャンテ</td>
+                                        <td>はじめまして</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Je suis + prénom (+ nom de famille)</td>
+                                        <td>watashi wa [namae] desu</td>
+                                        <td>ジュ スィ [プレノム]</td>
+                                        <td>わたしは [名前] です</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Je m’appelle + prénom (+ nom de famille)</td>
+                                        <td>watashi no namae wa [namae] desu</td>
+                                        <td>ジュ マペル [プレノム]</td>
+                                        <td>わたしの名前は [名前] です</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pardon</td>
+                                        <td>sumimasen</td>
+                                        <td>パルドン</td>
+                                        <td>すみません</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Désolé </td>
+                                        <td>gomen nasai</td>
+                                        <td>デゾレ</td>
+                                        <td>ごめんなさい</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Je suis vraiment désolé </td>
+                                        <td>hontou ni gomen nasai</td>
+                                        <td>ジュ スィ ヴレマン デゾレ</td>
+                                        <td>本当にごめんなさい</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bonne chance</td>
+                                        <td>ganbatte</td>
+                                        <td>ボンヌ シャンス</td>
+                                        <td>頑張って</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Santé</td>
+                                        <td>kanpai</td>
+                                        <td>サンテ</td>
+                                        <td>乾杯</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Incroyable</td>
+                                        <td>sugoi</td>
+                                        <td>アンクロワブル</td>
+                                        <td>すごい</td>
+                                    </tr>
+                                    <tr>
+                                        <td>As-tu mangé?</td>
+                                        <td>tabeta no?</td>
+                                        <td>ア トゥ マンジェ?</td>
+                                        <td>食べたの?</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bon appétit</td>
+                                        <td>itadakimasu</td>
+                                        <td>ボン アペティ</td>
+                                        <td>いただきます</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Merci pour ce repas</td>
+                                        <td>gochisousama deshita</td>
+                                        <td>メルシ プール ス レパ</td>
+                                        <td>ごちそうさまでした</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Félicitations</td>
+                                        <td>omedetou</td>
+                                        <td>フェリシタシオン</td>
+                                        <td>おめでとう</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pas de problème</td>
+                                        <td>mondai nai</td>
+                                        <td>パ ド プロブレム</td>
+                                        <td>問題ない</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bien sûr</td>
+                                        <td>mochiron</td>
+                                        <td>ビアン スール</td>
+                                        <td>もちろん</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Juste un moment, s'il vous plaît</td>
+                                        <td>shibaraku, onegaishimasu</td>
+                                        <td>ジュステ アン モマン, シル ヴ ウ プレ</td>
+                                        <td>しばらく、お願いします</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dormez bien</td>
+                                        <td>yoi yume wo</td>
+                                        <td>ドルメ ビアン</td>
+                                        <td>良い夢を</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Revenez en sécurité</td>
+                                        <td>anzen ni modotte kudasai</td>
+                                        <td>ルヴネ ゾ アン セキュリテ</td>
+                                        <td>安全に戻ってください</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!--   補助動詞「être」と「avoir」   -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="auxiliaire">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAuxiliaire" aria-expanded="false" aria-controls="collapseAuxiliaire">
+                            補助動詞「être」と「avoir」
+                        </button>
+                    </h2>
+                    <div id="collapseAuxiliaire" class="accordion-collapse collapse" aria-labelledby="Auxiliaire" data-bs-parent="#vocabularyAccordion">
+                        <div class="accordion-body">
+                            <h3>
+                                補助動詞「être」と「avoir」
+                            </h3>
+                            <p>
+                                「être」と「avoir」はフランス語で重要な補助動詞です。「être」は状態と身元を、「avoir」は所有権を示します。これらは文章の構成と動詞の活用に必須です。
+                            </p>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">
+                                            Être ("である") :
+                                        </th>
+                                        <th scope="col">
+                                            Avoir ("所有する") :
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            「である」は状態、身元、職業、国籍、出身地などを表現するために使われる動詞です。
+                                            フランス語での「être」は主語と動詞の時制によって変化します。いくつかの例を示します：
+                                            <br><br>
+
+                                            Je suis étudiant(e). (私は学生です。)
+                                            <br>
+                                            Tu es coréen(ne). (あなたは韓国人です。)
+                                            <br>
+                                            Il/elle est médecin. (彼/彼女は医者です。)
+                                            <br>
+                                            Nous sommes amis. (私たちは友人です。)
+                                            <br>
+                                            Vous êtes en retard. (あなたは遅れています。)
+                                            <br>
+                                            Ils/elles sont heureux(ses). (彼ら/彼女たちは幸せです。)
+                                        </td>
+                                        <td>
+                                            「所有する」は所有を示すために使われる動詞です。
+                                            フランス語での「avoir」は主語と動詞の時制によって変化します。いくつかの例を示します：
+                                            <br><br>
+
+                                            J'ai un chien. (私は犬を飼っています。)
+                                            <br>
+                                            Tu as de l'expérience. (あなたは経験があります。)
+                                            <br>
+                                            Il/elle a deux frères. (彼/彼女は2人の兄弟がいます。)
+                                            <br>
+                                            Nous avons faim. (私たちはお腹が空いています。)
+                                            <br>
+                                            Vous avez de la chance. (あなたは運がいいです。)
+                                            <br>
+                                            Ils/elles ont peur. (彼ら/彼女たちは怖がっています。)
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Temps</th>
+                                        <th scope="col">Etre</th>
+                                        <th scope="col">Avoir</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Présent (현재 시제) :</td>
+                                        <td>
+                                            Je suis (私はいます)
+                                            <br>
+                                            Tu es (あなたはいます)
+                                            <br>
+                                            Il/elle est (彼・彼女はいます)
+                                            <br>
+                                            Nous sommes (私たちはいます)
+                                            <br>
+                                            Vous êtes (あなたたちはいます)
+                                            <br>
+                                            Ils/elles sont (彼ら・彼女らはいます)
+                                        </td>
+                                        <td>
+                                            J'ai (私は持っています)
+                                            <br>
+                                            Tu as (あなたは持っています)
+                                            <br>
+                                            Il/elle a (彼・彼女は持っています)
+                                            <br>
+                                            Nous avons (私たちは持っています)
+                                            <br>
+                                            Vous avez (あなたたちは持っています)
+                                            <br>
+                                            Ils/elles ont (彼ら・彼女らは持っています)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Passé composé (과거 완료 시제) :</td>
+                                        <td>
+                                            J'ai été (私はいました)
+                                            <br>
+                                            Tu as été (あなたはいました)
+                                            <br>
+                                            Il/elle a été (彼・彼女はいました)
+                                            <br>
+                                            Nous avons été (私たちはいました)
+                                            <br>
+                                            Vous avez été (あなたたちはいました)
+                                            <br>
+                                            Ils/elles ont été (彼ら・彼女らはいました)
+                                        </td>
+                                        <td>
+                                            J'ai eu (私は持っていました)
+                                            <br>
+                                            Tu as eu (あなたは持っていました)
+                                            <br>
+                                            Il/elle a eu (彼・彼女は持っていました)
+                                            <br>
+                                            Nous avons eu (私たちは持っていました)
+                                            <br>
+                                            Vous avez eu (あなたたちは持っていました)
+                                            <br>
+                                            Ils/elles ont eu (彼ら・彼女らは持っていました)
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Futur simple (미래 시제) :</td>
+                                        <td>
+                                            Je serai (私はなるでしょう)
+                                            <br>
+                                            Tu seras (あなたはなるでしょう)
+                                            <br>
+                                            Il/elle sera (彼・彼女はなるでしょう)
+                                            <br>
+                                            Nous serons (私たちはなるでしょう)
+                                            <br>
+                                            Vous serez (あなたたちはなるでしょう)
+                                            <br>
+                                            Ils/elles seront (彼ら・彼女らはなるでしょう)
+                                        </td>
+                                        <td>
+                                            Je aurai (私は持つでしょう)
+                                            <br>
+                                            Tu auras (あなたは持つでしょう)
+                                            <br>
+                                            Il/elle aura (彼・彼女は持つでしょう)
+                                            <br>
+                                            Nous aurons (私たちは持つでしょう)
+                                            <br>
+                                            Vous aurez (あなたたちは持つでしょう)
+                                            <br>
+                                            Ils/elles auront (彼ら・彼女らは持つでしょう)
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="container my-5">
+                <h1>第2章</h1>
+
+                <!-- chapter2 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="Chapter2">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseChapter2" aria-expanded="false" aria-controls="collapseChapter2">
+                            Chapter2
+                        </button>
+                    </h2>
+                    <div id="collapseChapter2" class="accordion-collapse collapse" aria-labelledby="Chapter2">
+                        <div class="accordion-body">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">1</th>
+                                        <th scope="col">2</th>
+                                        <th scope="col">3</th>
+                                        <th scope="col">4</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>11</td>
+                                        <td>22</td>
+                                        <td>33</td>
+                                        <td>44</td>
+                                    </tr>   
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="/JLearningAS/js.js"></script>
+</body>
+</html>
